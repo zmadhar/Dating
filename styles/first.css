@@ -1,0 +1,124 @@
+/* zahra madhar */
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-color:whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+#Information{
+    margin: 34px;
+    display: flex;
+    
+}
+#Information .box{ 
+
+
+    padding: 34px;
+    margin: 2px 29px;
+    border-radius: 28px;
+
+    margin-bottom: 20px;
+}
+#Information .box1{ 
+
+border: 2px solid gray;
+padding: 34px;
+height: 310px;
+margin-top: 10px;
+margin-left: 50px;
+width: 330px;
+border-radius: 10px;
+background: gray;
+margin-bottom: 20px;
+}
+
+
+.hr1
+{
+    margin-left: 95px;
+    margin-top: 25px;
+}
+
+#Information .box p{
+    font-family: 'Bree Serif', serif;
+    display: inline;
+    margin-top: 0px;
+    margin-left: 5px;
+
+} 
+#Information .box1 p{
+    font-family: 'Bree Serif', serif;
+    display: inline;
+    margin-top: 0px;
+    margin-left: 5px;
+
+}
+h1
+{
+
+    margin-left:95px;
+    margin-top: 70px;
+    font-size: 45px;
+}
+
+input[type="text"]
+{
+
+    background-color:white;
+    margin-top: 15px;
+    width: 800px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+input[type="radio"]
+{
+    
+    width: 18px;
+    height: 25px;
+     margin-top: 5px;
+     margin-left: 10px;
+}
+label
+{
+    display: block;
+    font-family: 'Bree Serif', serif;
+    font-size: 26px;
+    margin-top: 20px;
+}
+h2
+{
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    margin-left:10px;
+    margin-top:30px;
+
+}
+button
+{
+    border-radius: 10px;
+    border: 2px solid blue;
+    width: 100px;
+    color: white;
+    margin-left: 700px;
+    margin-top: 15px;
+    height: 30px;
+    background-color: blue;
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+}

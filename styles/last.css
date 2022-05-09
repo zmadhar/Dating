@@ -1,0 +1,39 @@
+
+        h2
+        {
+            margin-left: 50px;
+            font-size: 25px;
+            padding: 10px 10px;
+        }
+        table
+        {
+            margin-left:100px;
+            margin-top:40px
+        }
+        table,tr,td
+        {
+    
+            
+            width:600px;
+            height:60px;
+            font-family: 'Bree Serif', serif;
+            font-size:20px;
+    
+        }
+        button
+    {
+        border-radius: 10px;
+        border: 2px solid blue;
+        width: 100px;
+        color: white;
+        margin-left: 700px;
+        margin-top: 15px;
+        height: 30px;
+        background-color: blue;
+        font-family: 'Bree Serif', serif;
+        font-size: 20px;
+    }
+body
+{
+    background-color:whitesmoke;
+}

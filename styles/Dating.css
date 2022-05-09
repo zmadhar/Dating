@@ -1,0 +1,10 @@
+.container {
+    margin: 2% auto;
+    border: 1px solid #d7dbde;
+    padding: 10px;
+    border-radius: 10px;
+}
+.jumbotron {
+    background-color: white;
+    padding: 2rem 1rem;
+}
