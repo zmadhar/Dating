@@ -1,6 +1,9 @@
-<!--zahra madhar
+<!--
+name and last name : zahra madhar
 
+class: sdev 328
 
+project: creating a dating website
 
 
  --->
@@ -25,8 +28,10 @@ if($_SERVER['REQUEST_METHOD']=='GET')
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/third.css">
+    <title>Interests</title>
 
 </head>
 <style>
@@ -36,30 +41,77 @@ if($_SERVER['REQUEST_METHOD']=='GET')
 
 <hr>
 
-    <h1>Interest</h1>
+
     <table  class="mytable">
-        <h2>In-door Interest</h2>
-     <form action="last.php" method="GET">   
+        <h1>In-door Interest</h1>
+
+     <form action="last.php" method="GET">
 
 
 
-        <tr>
-       
-        <td><input type="checkbox" name="info" value="TV">TV</input></td>
-        <td><input type="checkbox" name="info" value="Movies">Movies</input></td>
 
-        <td><input type="checkbox" name="info" value="Cooking">Cooking</input></td>
-        <td><input type="checkbox" name="info" value="Boardgame">Board Game</input></td>
+         <td><label>
+                 <input type="checkbox" name="info" value="TV">
+             </label>TV</input></td>
+         <td><label>
+                 <input type="checkbox" name="info" value="Movies">
+             </label>Movies</input></td>
+
+         <td><label>
+                 <input type="checkbox" name="info" value="Cooking">
+             </label>Cooking</input></td>
+         <td><label>
+                 <input type="checkbox" name="info" value="Boardgame">
+             </label>Board Game</input></td>
+         <tr>
+
+      <td><label>
+              <input type="checkbox" name="info" value="Puzzels">
+          </label>Puzzels</input></td>
+        <td><label>
+                <input type="checkbox" name="info" value="Reading">
+            </label>Reading</input></td>
+
+        <td><label>
+                <input type="checkbox" name="info" value="Playing Cards">
+            </label>Playing Cards</input></td>
+        <td><label>
+                <input type="checkbox" name="info" value="VideoGame">
+            </label>Video Game</input></td>
     </tr>
-      <tr>
-      <td><input type="checkbox" name="info" value="Puzzels">Puzzels</input></td>
-        <td><input type="checkbox" name="info" value="Reading">Reading</input></td>
 
-        <td><input type="checkbox" name="info" value="Playing Cards">Playing Cards</input></td>
-        <td><input type="checkbox" name="info" value="VideoGame">Video Game</input></td>
-    </tr>
+     <tr>
+         <title>out-door Interest</title>
+     </tr>
 
-    <tr>
+
+         <tr>
+             <td><label>
+                     <input type="checkbox" name="info" value="hiking">
+                 </label>hiking</input></td>
+             <td><label>
+                     <input type="checkbox" name="info" value="biking">
+                 </label>biking</input></td>
+
+             <td><label>
+                     <input type="checkbox" name="info" value="swimming">
+                 </label>swimming</input></td>
+             <td><label>
+                     <input type="checkbox" name="info" value="collecting">
+                 </label>collecting</input></td>
+         </tr>
+         <tr>
+             <td><label>
+                     <input type="checkbox" name="info" value="climbing">
+                 </label>climbing</input></td>
+             <td><label>
+                     <input type="checkbox" name="info" value="walking">
+                 </label>walking</input></td>
+
+         </tr>
+
+
+         <tr>
         <td colspan="4"><button type="submit">Next</button></td>
     </tr>
 
