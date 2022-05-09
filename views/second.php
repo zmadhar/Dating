@@ -1,9 +1,12 @@
 
-<!--zahra madhar
+<!--
+name and last name : zahra madhar
 
+class: sdev 328
 
+project: creating a dating website
 
-
+<link rel="stylesheet" href="../styles/second.css">
  --->
 <?php
 include 'Navbar.php';
@@ -37,7 +40,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET")
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/second.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -71,7 +74,7 @@ if($_SERVER["REQUEST_METHOD"]=="GET")
                </div>
                <div class="box1">
 
-<h2>BioGraphy</h2>
+<h2>Biography</h2>
 <textarea name="" id="" cols="30" rows="10"></textarea>
 
                </div>
