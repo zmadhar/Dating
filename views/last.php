@@ -1,3 +1,16 @@
+
+
+<!--
+name and last name : zahra madhar
+
+class: sdev 328
+
+project: creating a dating website
+
+
+ --->
+
+
 <?php
 include 'Navbar.php';
 session_start();
@@ -49,7 +62,7 @@ if($_SERVER['REQUEST_METHOD']=='GET')
     
     </table></td>
     <td><img src="../images/person.jpg" alt=""><h1>BioGraphy</h1>
-   <p>I live in America</p>
+
 
 </td>
 </tr>
