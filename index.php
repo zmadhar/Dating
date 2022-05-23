@@ -67,14 +67,18 @@ $f3->route('GET|POST /first', function($f3){
         } else {
             $f3->set('errors["PhoneNumber"]', 'Please enter a valid phone number');
         }
+        $gender= $_POST['gender'];
+        $f3->set('gender', $gender);
+        $gender = isset($_POST['gender']) ? $_POST['gender'] : "";
+        $_SESSION['gender'] = $gender;
 
         if (empty($f3->get('errors'))) {
             header('location: second');
         }
-    }
-    $_SESSION['gender'] = $_GET['gender'];
-    $f3->set('gender', getGender());
 
+    }
+
+    $f3->set('gender', getGender());
 
 
     $view = new Template();
@@ -213,7 +217,8 @@ $f3->route('GET|POST /third', function($f3){
 
 $f3->route('GET|POST /last', function() {
 
-
+    $_SESSION['indoor'] = implode(", ", $_POST['indoor']);
+    $_SESSION['outdoor'] = implode(", ", $_POST['outdoor']);
 
     $view = new Template();
     echo $view->render('views/last.html');
