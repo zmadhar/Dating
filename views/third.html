@@ -47,6 +47,11 @@ this file is the second part of the form
     font-weight: 600;
     font-size: 1em;
   }
+  span{
+    color: crimson;
+
+
+  }
 
 </style>
 
@@ -69,66 +74,42 @@ this file is the second part of the form
 </head>
 <body>
 <div class="container">
+  <form method="POST" action="">
   <div class="pfBox">
     <h1>Interests</h1>
     <hr/>
 
-    <form action="last" method="GET" class="form-horizontal">
-      <div class="row">
-        <div class="col interestsCol">
-          <label class="type">In-door Interests</label>
-          <div class="form-group">
+    <p class="font-weight-bold">Indoor Interests</p>
+    <div class="row my-2">
+      <repeat group="{{ @indoor}}" value="{{ @indoor }}">
+        <div class="col-sm-3">
+          <div class="form-check">
 
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Tv" name="Indoor">Tv</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Movies" name="Indoor">Movies</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Cooking" name="Indoor">Cooking</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Board Games" name="Indoor">Board Games</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Puzzles" name="Indoor">Puzzles</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Reading" name="Indoor">Reading</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Playing cards" name="Indoor">Playing cards</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Video Games" name="Indoor">Video Games</label>
-          </div>
-          <br>
-          <label class="type">Out-door Interests</label>
-          <div class="form-group">
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Hiking" name="Outdoor">Hiking</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Biking" name="Outdoor">Biking</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Swimming" name="Outdoor">Swimming</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Collecting" name="Outdoor">Collecting</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Walking" name="Outdoor">Walking</label>
-
-            <label class="interests">
-              <input type="checkbox" class="form-check-input" value="Climbing" name="Outdoor">Climbing</label>
-
+            <input class="form-check-input" type="checkbox" name="indoor[]" value="{{@indoor}}">
+            <label class="form-check-label">{{@indoor}}</label>
 
           </div>
+        </div>
+      </repeat>
+    </div>
 
-          <div class="row justify-content-end">
+
+
+
+    <p class="font-weight-bold pt-2">Outdoor Interests</p>
+    <div class="row">
+      <repeat group="{{ @outdoor}}" value="{{ @outdoor }}">
+        <div class="col-sm-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="outdoor[]"
+                   value="{{@outdoor}}">
+            <label class="form-check-label">{{@outdoor}}</label>
+          </div>
+        </div>
+      </repeat>
+    </div><!--outdoor interest row ends-->
+
+    <div class="row justify-content-end">
 
             <div class="col-md-6 d-flex flex-row-reverse">
 
@@ -138,7 +119,7 @@ this file is the second part of the form
 
           </div>
         </div>
-
+  </form>
       </div>
     </form>
 

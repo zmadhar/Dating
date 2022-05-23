@@ -25,8 +25,8 @@ this file is the homepage
 <include href="includes/Navbar.html"></include>
 <div class="container">
     <div class="pfBox">
-
-        <form action="last" method="GET" class="form-horizontal sumForm">
+        <form method="POST" action="">
+        <form class="form-horizontal sumForm">
             <div class="row">
                 <div class="col interestsCol">
                     <ul class="list-group">
@@ -38,8 +38,8 @@ this file is the homepage
                         <li class="list-group-item"><span>Email: {{ @SESSION.email }} </span></li>
                         <li class="list-group-item"><span>State: {{ @SESSION.state }}</span> </li>
                         <li class="list-group-item"><span>Seeking: {{ @SESSION.seeking }}</span></li>
-                        <li class="list-group-item"><span>In-door interests: {{ @SESSION.Indoor }}</span></li>
-                        <li class="list-group-item"><span>Out-door interest: {{ @SESSION.Outdoor }}</span></li>
+                        <li class="list-group-item"><span>In-door interests: {{ @SESSION.indoor }}</span></li>
+                        <li class="list-group-item"><span>Out-door interest: {{ @SESSION.outdoor }}</span></li>
 
                     </ul>
                 </div>
@@ -50,7 +50,6 @@ this file is the homepage
                         <h4>Biography</h4>
                         <p> {{ @SESSION.biography }}</p>
                     </div>
-
 
                 </div>
 

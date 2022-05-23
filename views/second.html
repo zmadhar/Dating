@@ -37,6 +37,12 @@ this file is the second part of the form
 
     }
 
+    span{
+        color: crimson;
+
+
+    }
+
 
 </style>
 
@@ -85,7 +91,7 @@ this file is the second part of the form
 
 <div class="container">
 
-        <form action="third" method="GET">
+    <form method="POST" action="#">
 
         <h1>Profile</h1>
 
@@ -99,8 +105,10 @@ this file is the second part of the form
 
                     <label for="email" class="form-label">Email</label>
 
-                    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-
+                    <input type="email" name="email" class="form-control" id="email" value="{{ @email}}">
+                    <check if="{{ isset(@errors['email']) }}">
+                        <span class="err">{{ @errors['email'] }}</span>
+                    </check>
                 </div>
 
                 <div class="mb-3">
@@ -109,13 +117,15 @@ this file is the second part of the form
 
                     <select class="form-select" aria-label="Default select example" name="state" id="state">
 
-                        <option selected>Washington</option>
+                        <option selected>Select</option>
 
-                        <option value="1">California</option>
+                        <option value="Washington">Washington</option>
 
-                        <option value="2">Oregon</option>
+                        <option value="California">California</option>
 
-                        <option value="3">Utah</option>
+                        <option value="Oregon">Oregon</option>
+
+                        <option value="Utah">Utah</option>
 
                     </select>
 

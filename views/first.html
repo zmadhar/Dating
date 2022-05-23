@@ -38,6 +38,12 @@ this file is the second part of the form
 
     }
 
+    span{
+        color: crimson;
+
+
+    }
+
 
 </style>
 
@@ -56,8 +62,6 @@ this file is the second part of the form
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="../styles/second.css">
 
     <title>Document</title>
 
@@ -86,7 +90,7 @@ this file is the second part of the form
 
 <div class="container">
 
-    <form action="second" method="GET">
+    <form method="POST" action="#">
 
         <h1>Personal Information</h1>
 
@@ -97,20 +101,31 @@ this file is the second part of the form
             <div class="col-md-6">
 
                 <div class="mb-3">
-
+                <div>
                     <label for="fname" class="form-label">First Name</label>
+                    <input type="fname" name="fname" class="form-control" id="fname" value="{{ @fname}}">
 
-                    <input type="fname" name="fname" class="form-control" id="fname">
+                    <check if="{{ isset(@errors['fname']) }}">
+                        <span class="err">{{ @errors['fname'] }}</span>
+                    </check>
+                </div>
 
-
+                    <div>
                     <label for="lname" class="form-label">Last Name</label>
+                        <input type="lname" name="lname" class="form-control" id="lname" value= "{{@lname}}">
+                        <check if="{{ isset(@errors['lname']) }}">
+                            <span class="err">{{ @errors['lname'] }}</span>
+                        </check>
+                    </div>
 
-                    <input type="lname" name="lname" class="form-control" id="lname">
 
+                    <div>
                     <label for="age" class="form-label">Age</label>
-
-                    <input type="age" name="age" class="form-control" id="age">
-
+                    <input type="age" name="age" class="form-control" id="age" value= "{{@age}}">
+                        <check if="{{ isset(@errors['age']) }}">
+                            <span class="err">{{ @errors['age'] }}</span>
+                        </check>
+                    </div>
                 </div>
 
                 <div class="mb-3">
@@ -143,13 +158,16 @@ this file is the second part of the form
 
                 </div>
 
-                <label for="PhoneNumber" class="form-label">Phone Number</label>
+                <div class="form-group"><br>
+                    <label for="PhoneNumber" class="font-weight-bold">Phone Number</label>
+                    <input class="form-control" id="PhoneNumber" name="PhoneNumber" type="tel" value="{{ @PhoneNumber}}">
 
-                <input type="PhoneNumber" name="PhoneNumber" class="form-control" id="PhoneNumber">
+                    <check if="{{ isset(@errors['PhoneNumber']) }}">
+                        <span class="err">{{ @errors['PhoneNumber'] }}</span>
+                    </check>
+                </div>
 
             </div>
-
-
 
                     <div class="col note">
                         <div class="notebox">
